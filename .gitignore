@@ -53,11 +53,11 @@ xcuserdata
 
 #.LSOverride#
 
-xbridge/android/libs
-xbridge/android/obj
+xbridge/proj.android/libs
+xbridge/proj.android/obj
 
-xbridge/android/.classpath
-xbridge/android/.project
-xbridge/android/.settings
-xbridge/android/gen
-xbridge/android/bin
+xbridge/proj.android/.classpath
+xbridge/proj.android/.project
+xbridge/proj.android/.settings
+xbridge/proj.android/gen
+xbridge/proj.android/bin

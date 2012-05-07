@@ -1,6 +1,8 @@
 #include "HelloWorldScene.h"
 #include "SimpleAudioEngine.h"
+#if (CC_TARGET_PLATFORM == CC_PLATFORM_IOS)
 #include "XBridge.h"
+#endif
 
 using namespace cocos2d;
 using namespace CocosDenshion;

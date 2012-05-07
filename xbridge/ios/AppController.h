@@ -13,5 +13,7 @@
     RootViewController    *viewController;
 }
 
+@property (nonatomic, retain) RootViewController *viewController;
+
 @end
 

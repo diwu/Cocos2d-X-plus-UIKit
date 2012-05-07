@@ -176,6 +176,8 @@
 		101C02B315577DA8002C8CDD /* RootViewController.mm in Sources */ = {isa = PBXBuildFile; fileRef = 101C02B215577DA8002C8CDD /* RootViewController.mm */; };
 		101C02B715577DA8002C8CDD /* AppDelegate.cpp in Sources */ = {isa = PBXBuildFile; fileRef = 101C02B615577DA8002C8CDD /* AppDelegate.cpp */; };
 		101C02BA15577DA8002C8CDD /* HelloWorldScene.cpp in Sources */ = {isa = PBXBuildFile; fileRef = 101C02B915577DA8002C8CDD /* HelloWorldScene.cpp */; };
+		10413E941557AC8300EF385E /* XBridge.mm in Sources */ = {isa = PBXBuildFile; fileRef = 10413E931557AC8300EF385E /* XBridge.mm */; };
+		10413E971557B67900EF385E /* XBridgeTableViewController.mm in Sources */ = {isa = PBXBuildFile; fileRef = 10413E961557B67900EF385E /* XBridgeTableViewController.mm */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
@@ -541,6 +543,10 @@
 		101C02B615577DA8002C8CDD /* AppDelegate.cpp */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.cpp.cpp; name = AppDelegate.cpp; path = Classes/AppDelegate.cpp; sourceTree = "<group>"; };
 		101C02B815577DA8002C8CDD /* HelloWorldScene.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; name = HelloWorldScene.h; path = Classes/HelloWorldScene.h; sourceTree = "<group>"; };
 		101C02B915577DA8002C8CDD /* HelloWorldScene.cpp */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.cpp.cpp; name = HelloWorldScene.cpp; path = Classes/HelloWorldScene.cpp; sourceTree = "<group>"; };
+		10413E921557AC5800EF385E /* XBridge.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; name = XBridge.h; path = ios/XBridge.h; sourceTree = "<group>"; };
+		10413E931557AC8300EF385E /* XBridge.mm */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.cpp.objcpp; name = XBridge.mm; path = ios/XBridge.mm; sourceTree = "<group>"; };
+		10413E951557B67900EF385E /* XBridgeTableViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; name = XBridgeTableViewController.h; path = ios/XBridgeTableViewController.h; sourceTree = "<group>"; };
+		10413E961557B67900EF385E /* XBridgeTableViewController.mm */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.cpp.objcpp; name = XBridgeTableViewController.mm; path = ios/XBridgeTableViewController.mm; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -1307,6 +1313,10 @@
 				101C02AF15577DA8002C8CDD /* AppController.mm */,
 				101C02B115577DA8002C8CDD /* RootViewController.h */,
 				101C02B215577DA8002C8CDD /* RootViewController.mm */,
+				10413E921557AC5800EF385E /* XBridge.h */,
+				10413E931557AC8300EF385E /* XBridge.mm */,
+				10413E951557B67900EF385E /* XBridgeTableViewController.h */,
+				10413E961557B67900EF385E /* XBridgeTableViewController.mm */,
 			);
 			name = ios;
 			sourceTree = "<group>";
@@ -1543,6 +1553,8 @@
 				101C02B315577DA8002C8CDD /* RootViewController.mm in Sources */,
 				101C02B715577DA8002C8CDD /* AppDelegate.cpp in Sources */,
 				101C02BA15577DA8002C8CDD /* HelloWorldScene.cpp in Sources */,
+				10413E941557AC8300EF385E /* XBridge.mm in Sources */,
+				10413E971557B67900EF385E /* XBridgeTableViewController.mm in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -1553,7 +1565,7 @@
 			isa = XCBuildConfiguration;
 			buildSettings = {
 				ARCHS = "$(ARCHS_STANDARD_32_BIT)";
-				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "iPhone Developer";
+				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "iPhone Developer: Di Wu (CB3TJSARXK)";
 				GCC_C_LANGUAGE_STANDARD = gnu99;
 				GCC_OPTIMIZATION_LEVEL = 0;
 				GCC_PREPROCESSOR_DEFINITIONS = (
@@ -1572,6 +1584,7 @@
 					"\"$(SDKROOT)/usr/include/libxml2\"",
 				);
 				IPHONEOS_DEPLOYMENT_TARGET = 5.1;
+				"PROVISIONING_PROFILE[sdk=iphoneos*]" = "9605E642-9F57-4E05-81F3-1ED2154E0F74";
 				SDKROOT = iphoneos;
 			};
 			name = Debug;
@@ -1658,6 +1671,7 @@
 				101C02BF15577DA8002C8CDD /* Release */,
 			);
 			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
 		};
 /* End XCConfigurationList section */
 	};

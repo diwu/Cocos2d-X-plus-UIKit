@@ -1,5 +1,6 @@
 #include "HelloWorldScene.h"
 #include "SimpleAudioEngine.h"
+#include "XBridge.h"
 
 using namespace cocos2d;
 using namespace CocosDenshion;
@@ -39,13 +40,15 @@ bool HelloWorld::init()
                                         "CloseSelected.png",
                                         this,
                                         menu_selector(HelloWorld::menuCloseCallback) );
-    pCloseItem->setPosition( ccp(CCDirector::sharedDirector()->getWinSize().width - 20, 20) );
-
+    pCloseItem->setPosition( ccp(CCDirector::sharedDirector()->getWinSize().width - 80, 120) );
+    pCloseItem->setScale(3);
+    pCloseItem->runAction(CCRepeatForever::actionWithAction(CCRotateBy::actionWithDuration(1.0f, 360)));
+    
     // create menu, it's an autorelease object
     CCMenu* pMenu = CCMenu::menuWithItems(pCloseItem, NULL);
     pMenu->setPosition( CCPointZero );
     this->addChild(pMenu, 1);
-
+    
     /////////////////////////////
     // 3. add your codes below...
 
@@ -76,9 +79,15 @@ bool HelloWorld::init()
 
 void HelloWorld::menuCloseCallback(CCObject* pSender)
 {
+#if (CC_TARGET_PLATFORM == CC_PLATFORM_IOS)
+    XBridge::doSth();
+#endif
+
+    /*
     CCDirector::sharedDirector()->end();
 
 #if (CC_TARGET_PLATFORM == CC_PLATFORM_IOS)
     exit(0);
 #endif
+     */
 }

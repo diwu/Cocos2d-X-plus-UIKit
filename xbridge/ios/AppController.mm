@@ -15,6 +15,8 @@
 
 @implementation AppController
 
+@synthesize viewController;
+
 #pragma mark -
 #pragma mark Application lifecycle
 

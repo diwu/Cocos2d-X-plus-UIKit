@@ -14,17 +14,8 @@
 using namespace cocos2d;
 
 void XBridge::doSth() {
-    CCLog(" - do sth ...");
     id sth = [[UIApplication sharedApplication] delegate];
-    if ([sth isKindOfClass:[AppController class]]) {
-        NSLog(@" - yes it's AppController");
-        
-        /*
-        UIImageView *iconImageView = [[UIImageView alloc] initWithImage:[UIImage imageNamed:@"Icon.png"]];
-        AppController *controller = (AppController *)sth;
-        [controller.viewController.view addSubview:iconImageView];
-         */
-        
+    if ([sth isKindOfClass:[AppController class]]) {        
         XBridgeTableViewController *tempTableViewController = [[XBridgeTableViewController alloc] initWithNibName:nil bundle:nil];        
         tempTableViewController.tableView.frame = CGRectMake(100, 100, 200, 100);
         AppController *controller = (AppController *)sth;
